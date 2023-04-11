@@ -1,0 +1,41 @@
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UNCP Productivity Login</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="w3-top">
+        <div class="w3-bar w3-yellow w3-card w3-left-align w3-large">
+          <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-yellow" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+          <a href="pomodoro.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Pomodoro</a>
+          <a href="notes.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Notes</a>
+          <a href="todolist.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">To Do List</a>
+          <a href="logint.html" class="w3-right w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Log In</a>
+        </div>
+  	<h2>Login</h2>
+    
+  </div>
+	 
+  <form method="post" action="login.php">
+  	<?php include('errors.php'); ?>
+  	<div class="input-group">
+  		<label>Username</label>
+  		<input type="text" name="username" >
+  	</div>
+  	<div class="input-group">
+  		<label>Password</label>
+  		<input type="password" name="password">
+  	</div>
+  	<div class="input-group">
+  		<button type="submit" class="btn" name="login_user">Login</button>
+  	</div>
+  	<p>
+  		Don't have a UNCP Productivity account? <a href="register.php">Register Here</a>
+  	</p>
+  </form>
+</body>
+</html>
